@@ -91,24 +91,23 @@ rootdir: C:\Users\yagon\Desktop\p2terça
 configfile: pytest.ini
 testpaths: tests
 plugins: anyio-4.13.0, cov-5.0.0
-collecting ... collected 16 items
+collecting ... collected 15 items
 
 tests/test_produtos.py::test_listar_produtos_banco_vazio PASSED          [  6%]
-tests/test_produtos.py::test_criar_produto_e_verificar_persistencia PASSED [ 12%]
-tests/test_produtos.py::test_criar_produto_aparece_na_listagem PASSED    [ 18%]
-tests/test_produtos.py::test_buscar_produto_por_id_sucesso PASSED        [ 25%]
-tests/test_produtos.py::test_buscar_produto_id_inexistente PASSED        [ 31%]
-tests/test_produtos.py::test_deletar_produto_sucesso PASSED              [ 37%]
-tests/test_produtos.py::test_deletar_produto_e_confirmar_remocao PASSED  [ 43%]
-tests/test_produtos.py::test_deletar_produto_inexistente PASSED          [ 50%]
-tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido0-nome ausente] PASSED [ 56%]
-tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido1-nome vazio (string vazia)] PASSED [ 62%]
-tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido2-preço negativo] PASSED [ 68%]
-tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido3-preço igual a zero] PASSED [ 75%]
-tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido4-estoque negativo] PASSED [ 81%]
-tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido5-preço ausente] PASSED [ 87%]
-tests/test_produtos.py::test_isolamento_banco_entre_testes PASSED        [ 93%]
-tests/test_produtos.py::test_get_db_generator PASSED                     [100%]
+tests/test_produtos.py::test_criar_produto_e_verificar_persistencia PASSED [ 13%]
+tests/test_produtos.py::test_criar_produto_aparece_na_listagem PASSED    [ 20%]
+tests/test_produtos.py::test_buscar_produto_por_id_sucesso PASSED        [ 26%]
+tests/test_produtos.py::test_buscar_produto_id_inexistente PASSED        [ 33%]
+tests/test_produtos.py::test_deletar_produto_sucesso PASSED              [ 40%]
+tests/test_produtos.py::test_deletar_produto_e_confirmar_remocao PASSED  [ 46%]
+tests/test_produtos.py::test_deletar_produto_inexistente PASSED          [ 53%]
+tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido0-nome ausente] PASSED [ 60%]
+tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido1-nome vazio] PASSED [ 66%]
+tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido2-preço negativo] PASSED [ 73%]
+tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido3-preço igual a zero] PASSED [ 80%]
+tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido4-estoque negativo] PASSED [ 86%]
+tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido5-preço ausente] PASSED [ 93%]
+tests/test_produtos.py::test_isolamento_banco_entre_testes PASSED        [100%]
 
 ---------- coverage: platform win32, python 3.10.x ----------
 Name      Stmts   Miss  Cover   Missing
@@ -117,6 +116,6 @@ main.py      66      4    94%   90-93
 ---------------------------------------
 TOTAL        66      4    94%
 
-======================== 16 passed, 1 warning in 1.65s ========================
+======================== 15 passed, 1 warning in 1.55s ========================
 ```
 
